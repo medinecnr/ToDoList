@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: normalYazi;
+}
+
+@font-face {
+    font-family:title ;
+    src: url(./campus/baslik.ttf);
+}
+@font-face {
+    font-family: normalYazi;
+    src: url(./roboto/Roboto-Regular.ttf);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.title{
+    font-size: 50px;
+    text-align: center;
+    background: linear-gradient( #4E4FEB, hotpink, #4E4FEB);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 20px ;
+    font-family: title;
+}
+
+
+.input-g{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inp{
+    height: 35px;
+    width: 50%;
+    padding: 0px 10px;
+    border: 1px solid #4E4FEB;
+    border-right: none;
+    border-radius: 5px 0px 0px 5px;
+}
+.inp-edit{
+    height: 35px;
+    width: 100%;
+    padding: 0px 10px;
+    border: 1px solid #4E4FEB;
+    border-radius: 5px 0px 0px 5px;
+    border-right: none;
+}
+.btn-edit{
+    padding: 0px 5px;
+    height: 35px;
+    border: 1px solid #4E4FEB;
+    background-color: #068FFF;
+    color: white;
+    border-left: none;
+    border-radius: 0px 5px 5px 0px;
+}
+.btn{
+    padding: 0px 5px;
+    height: 35px;
+    min-width: 10%;
+    border: 1px solid #4E4FEB;
+    border-left: none;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #068FFF;
+    color: white;
+}
+.kapsayici{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #4E4FEB;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.icon-div{
+    display: flex;
+    gap: 10px;
+}
+.yapildi{
+    background-color: rgb(147, 221, 147);
+}
+.yapildi span{
+    text-decoration: line-through;
+}
+
+@keyframes efektli-sil{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+@media (max-width:475px) {
+    .container{
+        width: 100%;
+    }
+}
